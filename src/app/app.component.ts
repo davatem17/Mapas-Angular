@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Mapa';
+  lat: number;
+  lng: number;
+  zoom: number;
+  mapTypeId: string;
+
+  constructor(){
+    this.lat = 40;
+    this.lng = -3;
+    this.zoom = 6;
+    this.mapTypeId = 'hybrid';
+  }
 }
